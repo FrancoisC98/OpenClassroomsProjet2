@@ -5,6 +5,23 @@
     padding: 0;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 100%;
+}
+
+
+/* BARRE DE NAVIGATION */
+
 nav {
     height: 79px;
     display: flex;
@@ -13,10 +30,9 @@ nav {
 }
 
 nav img {
-    width: 60px;
-    padding-left: 50px;
+  height: 20px;
+  padding-left: 50px;
 }
-
 
 nav ul {
     display: flex;
@@ -41,6 +57,9 @@ nav ul li a:hover {
     padding-top: 13px;
 }
 
+
+/* HEADER */
+
 header {
     position: relative;
     padding-left: 50px;
@@ -62,10 +81,9 @@ padding-bottom: 20px;
 .search-bar {
     display: flex;
     align-items: center;
-    background-color: #f2f2f2;
     border-radius: 15px;
     padding: 1px;
-    width: fit-content;
+    width: 100%;
   }
 
   .location {
@@ -73,6 +91,10 @@ padding-bottom: 20px;
     align-items: center;
     background-color: white;
     border-radius: 15px 0 0 15px;
+  }
+
+ .loupe-mobile {
+    display: none;
   }
 
   .location input {
@@ -103,7 +125,7 @@ padding-bottom: 20px;
 
 input {
     padding: 0.5rem;
-    width: 200px;
+    max-width: 200px;
     margin-right: 1rem;
     border-radius: 8px;
     border: 1px solid #ccc;
@@ -111,7 +133,9 @@ input {
 
 
 
-
+.filtre-seul {
+  font-weight: 600;
+}
 
   .filter {
     display: flex;
@@ -158,17 +182,47 @@ input {
   gap: 10px;
 }
 
+
+/* HOTELS MARSEILLE */
+
+#hebergements {
+  gap: 40px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.note-hotel-left {
+  padding: 10px;
+}
+
+.note-hotel-right{
+  padding-top: 70px;
+  padding-left: 10px;
+}
+
+.hotel-pop:nth-of-type(2) .note-hotel-right {
+  padding-top: 50px;
+  padding-left: 10px;
+}
+
+.fa-star {
+  color: #0065FC;
+}
+
+.neutral-star {
+color:#ccc ;
+}
+
 .hotel-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 811px;
     height: auto;
     padding-bottom: 30px;
     padding-right: 20px;
     padding-left: 20px;
-    
-  
+    gap: 10px;
 }
 
 .hotel-1 {
@@ -179,9 +233,7 @@ input {
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-
 }
-
 
 .hotel-2 {
   background-color: white;
@@ -201,10 +253,8 @@ input {
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-
-
-
 }
+
 .hotel-4 {
   background-color: white;
   padding: 5px;
@@ -213,9 +263,8 @@ input {
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-
-
 }
+
 .hotel-5 {
   background-color: white;
   padding: 5px;
@@ -224,11 +273,9 @@ input {
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-
-
 }
+
 .hotel-6 {
-  
   display: flex;
   flex-direction: column;
   border-radius: 15px;
@@ -241,24 +288,19 @@ input {
 .hotel-bot {
   display: flex;
   justify-content: space-between;
-  width: 811px;
   height: auto;
   align-items: center;
   padding-right: 20px;
   padding-left: 20px;
+  gap: 10px;
 }
-#hebergements {
-gap: 40px;
-  padding: 50px;
-  display: flex;
-  justify-content: space-between;
-}
-
 
 .marseille img{
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 5 / 3;
   height: 150px;
   padding-bottom: 7px;
 }
@@ -270,11 +312,11 @@ gap: 40px;
 }
 
 .marseille {
+  width: 100%;
   background-color: #F2F2F2;
   border-radius: 15px;
-
-
 }
+
 .marseille h3 {
   padding: 7px;
 }
@@ -287,7 +329,10 @@ gap: 40px;
   padding: 11px;
 }
 
+/* HOTELS POPULAIRES */
+
 .populaire {
+  width: 45%;
   background-color: #F2F2F2;
   border-radius: 15px;
   display: flex;
@@ -295,15 +340,21 @@ gap: 40px;
   align-items: normal;
 }
 
+.populaire img {
+  padding-right: 7px;
+  width: 100%;
+  max-width: 123px;
+  height: 146px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  }
+
 .marseille h2 {
   padding: 20px;
 }
 
-
 .populaire h2 {
   padding: 20px;
-
-
 }
 
 .populaire a  {
@@ -318,6 +369,7 @@ gap: 40px;
   background-color: white;
   padding: 5px;
   margin: 15px;
+  margin-top: 35px;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   cursor: pointer;
@@ -332,14 +384,6 @@ gap: 40px;
   padding-bottom: 7px;
 }
 
-.populaire img {
-padding-right: 7px;
-width: 123px;
-height: 146px;
-border-top-left-radius: 15px;
-border-bottom-left-radius: 15px;
-
-}
 .text-hotel-pop a {
   display: flex;
   flex-direction: column;
@@ -347,6 +391,7 @@ border-bottom-left-radius: 15px;
   gap: 5px;
 }
 
+/* ACTIVITÉS */
 
 .lieux {
   width: 100%;
@@ -364,7 +409,6 @@ border-bottom-left-radius: 15px;
   text-decoration: none;
   text-transform: none;
   color: black;
-
 }
 
 .lieux img {
@@ -391,7 +435,7 @@ border-bottom-left-radius: 15px;
   align-items: center;
 }
 
-
+/* FOOTER */
 
 footer {
   display: flex;
@@ -400,7 +444,6 @@ footer {
   background-color: rgba(242, 242, 242, 1);
   margin-left: 50px;
   margin-right: 50px;
-
 }
 
 footer ul {
@@ -414,71 +457,4 @@ footer ul li {
 footer ul a {
   text-decoration: none;
   color: black;
-}
-
-
-
-
-@media screen and (max-width: 1024px) {
-
-* {
-  max-width: 1024px;
-}
-
-
-#hebergements {
-  flex-direction: column;
-  gap: 50px;
- }
-
- .marseille {
- }
- 
- .hotel-top {
-  width: auto;
- }
-
- .hotel-bot {
-  width: auto;
- }
-
-.hotelpopulaire {
-  display: flex;
-}
-
-.lieux {
-  flex-wrap: nowrap;
-  padding: 50px;
-}
-
-
-#activites img {
-object-fit: cover;
-}
-
-}
-
-
-
-
-@media screen and (max-width: 768px) 
-{
-
-  * {
-    max-width: 768px;
- 
-  }
-  
-  nav {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    height: 50px;
-  }
-
-  nav ul li {
-    padding: 0;
-    margin: 0;
-  }
-
 }

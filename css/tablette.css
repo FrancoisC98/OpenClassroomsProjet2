@@ -1,0 +1,81 @@
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    * {
+      max-width: 1024px;
+    }
+    
+    
+    #hebergements {
+      flex-direction: column;
+      gap: 50px;
+     }
+
+     .location .loupe-mobile {
+      display: none;
+    }
+    
+  
+     .hotel-top {
+      width: auto;
+     }
+    
+     .hotel-bot {
+      width: auto;
+     }
+    
+     .populaire {
+      width: 100%;
+     }
+     
+    .hotelpopulaire {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .hotel-pop {
+        flex: 1;
+        position: relative;
+    }
+    
+    .text-hotel-pop h3 {
+        font-size: 1rem
+    }
+
+   .text-hotel-pop p {
+        font-size: 0.9rem;
+   }
+
+   .note-hotel-right {
+    position: absolute;
+    bottom: 5px;
+   }
+
+   .fa-star {
+    font-size: 0.9rem;
+   }
+
+    .lieux {
+      flex-wrap: nowrap;
+      padding: 40px;
+    }
+    
+    
+    #activites img {
+    object-fit: cover;
+    }
+    
+    .activite h3 {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    footer {
+        padding: 35px;
+    }
+
+    footer li a {
+        font-size: 0.9rem;
+    }
+    }
+    
+    
