@@ -41,12 +41,13 @@ header h3 {
     padding-top: 10px
 }
 
-  .search-btn   {
+.search-btn   {
     display: none;  
   }
 
 .loupe-mobile {
-    display: inline;
+    display: block;
+    
 }
 
 .filter {
