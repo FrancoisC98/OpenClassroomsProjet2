@@ -18,17 +18,40 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 50px;
+    margin-bottom: 30px;
+    gap: 25px;
   }
+
+  nav ul {
+    font-size: 1.2rem;
+    font-weight: 100;
+    width: 100%;
+    justify-content: center;
+    border-bottom: 2px solid rgba(242, 242, 242, 1);
+    padding-bottom: 10px;
+  }
+
+  nav ul :hover {
+    color: #0065FC;
+    border-bottom: 2px solid #0065FC;
+    padding-bottom: 10px;
+}
 
   nav img {
     padding-left: 0;
-    padding-top: 20px;
+    margin-top: 20px;
   }
 
   nav ul li {
     padding: 0;
     margin: 0;
   }
+
+nav ul li a:hover {
+    color: inherit;
+    border-top: none;
+    padding-top: none;
+}
 
 /* HEADER */
 
@@ -47,6 +70,8 @@ header h3 {
 
 .loupe-mobile {
     display: block;
+    height: 15px;
+    width: 15px;
     
 }
 
@@ -89,7 +114,7 @@ header h3 {
 .hotel-top {
     display: flex;
     flex-direction: column;
-    max-width: 375px;
+    min-width: 375px;
     width: 100%;
     gap: 20px;
     padding-left: 0;
@@ -97,7 +122,27 @@ header h3 {
 }
 
 .hotel-1 {
-    flex-grow: 1;
+    width: 90%;
+}
+
+.hotel-2 {
+    width: 90%;
+}
+
+.hotel-3 {
+    width: 90%;
+}
+
+.hotel-4 {
+    width: 90%;
+}
+
+.hotel-5 {
+    width: 90%;
+}
+
+.hotel-6 {
+    width: 90%;
 }
 
 .hotel-bot {
@@ -122,7 +167,7 @@ header h3 {
 
 .populaire {
     width: 375px;
-    max-width: 100%;
+    min-width: 100%;
     margin-top: 50px;
     border-radius: 0%;
 }
@@ -177,6 +222,10 @@ header h3 {
 
 #activites h2 {
     font-weight: 500;
+}
+
+.activite {
+    width: 100%;
 }
 
 .activite img{

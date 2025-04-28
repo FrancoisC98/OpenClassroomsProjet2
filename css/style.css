@@ -108,8 +108,8 @@ header h3 {
     padding: 12px 20px;
     font-size: 16px;
     cursor: pointer;
-    transition: transform 0.4 ease;
-
+    transition: transform 0.3s ease;
+    color: white;
   }
 
   .search-btn:hover {
@@ -203,6 +203,10 @@ input {
   padding-left: 10px;
 }
 
+.hotel-pop:nth-of-type(3) .note-hotel-right {
+  padding-top: 50px;
+}
+
 .fa-star {
   color: #0065FC;
 }
@@ -284,11 +288,9 @@ color:#ccc ;
 
 .hotel-bot {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   height: auto;
   align-items: center;
-  padding-right: 20px;
-  padding-left: 20px;
   gap: 10px;
 }
 
@@ -296,7 +298,6 @@ color:#ccc ;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   width: 100%;
-  max-width: 250px;
   aspect-ratio: 5 / 3;
   height: 150px;
   padding-bottom: 7px;
@@ -427,7 +428,7 @@ color:#ccc ;
 }
 
 .hotel-pop {
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
 }
 
 .hotel-pop:hover {
@@ -435,6 +436,12 @@ color:#ccc ;
 }
 
 /* ACTIVITÉS */
+
+#activites a {
+  text-decoration: none;
+  text-transform: none;
+  color: black
+}
 
 .lieux {
   width: 100%;
@@ -475,7 +482,6 @@ color:#ccc ;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .activite {
