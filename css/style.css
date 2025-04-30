@@ -165,8 +165,9 @@ input {
     background-color: #DEEBFF;
   }
 
-  .filter ul li img {
-    vertical-align: sub; 
+  .filter ul li i {
+    font-family: 'Raleway', sans-serif;
+    color: #0065FC;
     padding-right: 10px;
 }
 
