@@ -34,27 +34,31 @@ nav img {
   padding-left: 50px;
 }
 
-nav ul {
+nav .liens {
     display: flex;
     justify-content: flex-end;
     gap: 68px;
 }
 
-nav ul li {
-    padding-top: 16px;
+nav .liens {
     padding-right: 50px;
 }
 
-nav ul li a {
+nav .liens a {
     text-decoration: none;
     color: black;
+    padding-top: 15px;
+    border: white solid;
+    border-width: 0;
+    border-top-width: 2px;
 
 }
 
-nav ul li a:hover {
+nav .liens a:hover {
     color: #0065FC;
-    border-top: 2px solid #0065FC;
-    padding-top: 13px;
+    border: #0065FC solid;
+    border-width: 0;
+    border-top-width: 2px;
 }
 
 
@@ -213,6 +217,16 @@ input {
 
 .neutral-star {
 color:#ccc ;
+}
+
+.titre-hotel-pop {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.titre-hotel-pop .fa-solid {
+  color:#0065FC
 }
 
 .hotel-top {

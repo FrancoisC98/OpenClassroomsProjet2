@@ -14,14 +14,10 @@
 <body>
     <nav>
         <img src="./images/logo/Booki.png" alt="">
-        <ul>
-            <li><a href="#hebergements">Hébergements</a>
-                <div class="ligne-hebergement"></div>
-            </li>
-            <li><a href="#activites">Activités</a>
-                <div class="ligne-activites"></div>
-            </li>
-        </ul>
+        <div class="liens">
+            <a href="#hebergements">Hébergements</a>            
+            <a href="#activites">Activités</a>
+        </div>
     </nav>
     
     <header>
@@ -30,7 +26,7 @@
         <div class="search-bar">
             <div class="location"><img src="./images/logo/Vector.png" alt="vector">
                 <form action="#" method="post">
-                <input type="text" name="champTexte" placeholder="Où souhaitez-vous allez">
+                <input type="text" name="champTexte" placeholder="Marseille, France">
                 <button class="search-btn" type="submit">Rechercher</button>
                 </form>
             </div>
@@ -148,7 +144,10 @@
 
         
         <section class="populaire">
+            <div class="titre-hotel-pop">
             <h2>Les plus populaires</h2>
+            <i class="fa-solid fa-chart-line"></i>             
+            </div>
             <div class="hotelpopulaire">
                 <div class="hotel-pop">
                     <a href="#">

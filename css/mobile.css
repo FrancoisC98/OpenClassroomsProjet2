@@ -19,34 +19,17 @@ body {
     align-items: center;
     min-height: 50px;
     margin-bottom: 30px;
-    gap: 25px;
   }
 
-  nav ul {
+  nav .liens {
     font-size: 1.2rem;
     font-weight: 100;
     width: 100%;
+    gap:inherit;
     justify-content: center;
-    gap: 80px;
   }
 
-  .ligne-hebergement {
-    position: absolute;
-    border: 1px solid rgba(242, 242, 242, 1);
-    width: 50%;
-    left: 0;
-    top: 100px;  
-}
-
-.ligne-activites {
-    position: absolute;
-    border: 1px solid rgba(242, 242, 242, 1);
-    width: 50%;
-    right: 0;
-    top: 100px; 
-}
-
-nav ul:active {
+nav .liens:active {
     color: #0065FC;
 }
 
@@ -55,14 +38,22 @@ nav ul:active {
     margin-top: 20px;
   }
 
-  nav ul li {
+  nav .liens {
     padding: 0;
     margin: 0;
   }
 
-nav ul li a:hover {
-    color: inherit;
-    border-top: none;
+  nav .liens a {
+    border-bottom: 2px solid #d9d9d9;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 50%;
+    gap:0;
+  }
+
+nav .liens a:hover{
+    border-top-width: 0;
+    border-bottom-width: 2px;
 }
 
 /* HEADER */
