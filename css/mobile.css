@@ -118,6 +118,12 @@ header h3 {
 
 /* HOTELS */
   
+
+.titre-hotel-pop {
+    justify-content: space-between;
+    padding-right: 30px;
+   }
+   
 .hotel-top {
     display: flex;
     flex-direction: column;

@@ -27,9 +27,21 @@
       width: 100%;
      }
      
+
+     .titre-hotel-pop {
+      justify-content: space-between;
+      padding-right: 30px;
+     }
+
+     
     .hotelpopulaire {
       display: flex;
       justify-content: space-between;
+      font-size: 0.8rem;
+    }
+
+    .hotel-pop img {
+      width: 40%;
     }
 
     .hotel-pop {
